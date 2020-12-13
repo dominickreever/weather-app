@@ -52,8 +52,6 @@ function processWeather(weatherData) {
   displayData(formattedData);
 }
 
-getWeather("New York");
-
 // Display data on page
 
 function displayData(formattedData) {
@@ -68,6 +66,9 @@ function displayData(formattedData) {
   document.querySelector('.humidity').textContent = `Humidity: ${formattedData.humidity}%`;
 }
 
+getLocation("New York");
+
+/*
 // Receive gif data
 function getGif() {
   fetch('https://api.giphy.com/v1/gifs/translate?api_key=kArV8hWY3k6g9psYaNSYrpSWDirGkpTA&s=weather', {mode: 'cors'})
@@ -78,6 +79,5 @@ function getGif() {
       console.log(response);
     });
 }
-
-// getGif();
-
+getGif();
+*/
