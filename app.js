@@ -17,12 +17,13 @@ function getLocation() {
 }
 
 async function getWeather(location) {
-  const response = await fetch(`http://api.openweathermap.org/data/2.5/weather?q=${location}&appid=10db6a9dd5afaca5cf1fe1e960dbe7bf`, {mode: 'cors'});
+  const response = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${location}&appid=10db6a9dd5afaca5cf1fe1e960dbe7bf`, {mode: 'cors'});
   const weatherData = await response.json();
   console.log(weatherData)
   processWeather(weatherData);
 }
 
+getWeather("New York");
 // Process weather data into a usable format
 // Temperature data from API measured in Kelvin
 
@@ -66,7 +67,7 @@ function displayData(formattedData) {
   document.querySelector('.humidity').textContent = `Humidity: ${formattedData.humidity}%`;
 }
 
-getLocation("New York");
+
 
 /*
 // Receive gif data
