@@ -1,0 +1,13 @@
+body {
+    background-color: black;
+}
+
+.wrapper {
+    margin: auto;
+    width: 50%;
+    align-content: center;
+    text-align: center;
+    border: solid white;
+    border-radius: 25%;
+    color: white;
+}
