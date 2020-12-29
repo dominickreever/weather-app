@@ -23,6 +23,9 @@ body {
     padding: 2%;
 }
 
+.location {
+    margin-top: 1.5em;
+}
 .temp {
     font-size: 4em;
     margin: auto;
