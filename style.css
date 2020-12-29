@@ -1,5 +1,6 @@
 body {
-    background-color: black;
+    background-color: skyblue;
+    font-size: 1em;
 }
 
 .header {
@@ -7,17 +8,22 @@ body {
     width: 50%;
     align-content: center;
     text-align: center;
-    border: solid white;
-    border-radius: 25%;
     color: white;
-    padding: 1%;
 }
 
 .weather-info {
     margin: auto;
-    width: 30%;
-    align-content: center;
+    margin-top: 5%;
+    height: 20em;
+    width: 20em;
     text-align: center;
     border: solid white;
     color: white;
+    border-radius: 50%;
+    padding: 2%;
+}
+
+.temp {
+    font-size: 4em;
+    margin: auto;
 }
